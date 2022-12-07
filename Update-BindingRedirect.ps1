@@ -109,7 +109,7 @@ function Update-BindingRedirect
         }
 
         
-        Edit-TfVcFile -Path $configFilePath
+        #Edit-TfVcFile -Path $configFilePath
         Write-Verbose "Invoking adding of assembly binding redirect"
         $projectName = [IO.Path]::GetFileNameWithoutExtension($projectFile)
         Add-BindingRedirect -ProjectName $projectName
